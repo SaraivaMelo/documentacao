@@ -1,0 +1,52 @@
+site_name: Documentação QuarkRH
+site_description: Documentação técnica do projeto
+
+theme:
+  name: material
+  palette:
+    scheme: custom
+    primary: '#39352F'
+    accent: '#EA8C0C'
+  logo: assets/img/logo.svg
+  favicon: assets/img/logo.svg
+  custom_dir: docs/assets
+
+  language: pt-BR
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.instant
+    - toc.integrate
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - Inicio: 'index.md'
+  - Departamento Pessoal: 'dp.md'
+  - Frequencia: 'frequencia.md'
+  - Férias: 'ferias.md'
+  - Comunicação: 'comunicacao.md'
+  - Saúde Ocupacional: 'so.md'
+  - Benefícios: 'beneficios.md'
+  - Gestao de EPI: 'epi.md'
+  - Avaliação de Desempenho: 'avaliacao.md'
+  - Perfil Comportamental: 'perfil.md'
+  - Pesquisa de Clima: 'pesquisa.md'
+  - Feedbacks: 'feedbacks.md'
+  - Recrutamento e Seleção: 'res.md'
+  - Portal do Gestor: 'gestor.md'
+  - Portal do Colaborador: 'colaborador.md'
+  - Assinatura Eletronica: 'sign.md'
+  - Treinamento e Desenvolvimento: 'ted.md'
+
+plugins:
+  - search
+  # - mkdocstrings
+
+extra_css:
+  - assets/css/default.css
+
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
