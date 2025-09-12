@@ -22,6 +22,7 @@ theme:
 
 nav:
   - Inicio: 'index.md'
+  - Dashboard: 'dashboard.md'
   - Departamento Pessoal: 'dp.md'
   - Frequencia: 'frequencia.md'
   - Férias: 'ferias.md'
@@ -41,7 +42,8 @@ nav:
 
 plugins:
   - search
-  # - mkdocstrings
+  - macros
+  - include-markdown
 
 extra_css:
   - assets/css/default.css

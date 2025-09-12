@@ -1,0 +1,23 @@
+/* Estiliza todas as tabelas */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+/* Estiliza as bordas */
+table, th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+/* Cabeçalho */
+thead {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Linhas alternadas */
+tr:nth-child(even) {
+    background-color: #fafafa;
+}
