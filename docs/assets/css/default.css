@@ -1,6 +1,33 @@
 .md-header {
-  background-color: #39352F;
+  background-color: #3D3932;
 }
+
+.md-tabs {
+  background-color: #2e2c3d;
+}
+
+.md-typeset {
+  font-size: 17px;
+}
+
+/* Aplica um tamanho de fonte padronizado para todos os tipos de admonitions */
+.md-typeset .admonition,
+.md-typeset details {
+  font-size: 16px; /* Altere para o tamanho desejado */
+}
+
+
+/* Cor dos textos das abas */
+.md-tabs__link {
+  color: white;
+}
+
+/* Cor da aba ativa (opcional, para destacar) */
+.md-tabs__link--active {
+  color: #EA8C0C; 
+  font-weight: bold;
+}
+
 .icon_default_size{
   width: 50px;
   height: 50px;
