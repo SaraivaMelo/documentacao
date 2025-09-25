@@ -1,3 +1,12 @@
+
+.md-sidebar {
+  display: none;
+}
+  .md-sidebar--secondary:not([hidden]) {
+      display: none;
+  }
+
+/* Cor no topo da página  */
 .md-header {
   background-color: #3D3932;
 }
@@ -6,32 +15,110 @@
   background-color: #2e2c3d;
 }
 
-.md-typeset {
-  font-size: 17px;
+.md-typeset h1 {
+    font-weight: bolder;
+    letter-spacing: normal;
+    margin: 0;
 }
-
-/* Aplica um tamanho de fonte padronizado para todos os tipos de admonitions */
-.md-typeset .admonition,
-.md-typeset details {
-  font-size: 16px; /* Altere para o tamanho desejado */
+.md-typeset span{
+  color: #EA8C0C;
+  margin: 0;
 }
-
-
-/* Cor dos textos das abas */
-.md-tabs__link {
-  color: white;
-}
-
-/* Cor da aba ativa (opcional, para destacar) */
-.md-tabs__link--active {
-  color: #EA8C0C; 
-  font-weight: bold;
-}
-
 .icon_default_size{
-  width: 50px;
-  height: 50px;
-  vertical-align: middle;
-  height: 1em;
-  margin-right: 0.3em;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+
+}
+
+/* centraliza o conteúdo do home na página (via JS)*/
+body.home .md-main__inner {
+  display: block !important;
+  margin: auto;
+  width: 100%;
+  max-width: 1200px; 
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+
+/* ---------------------------------------------------- */
+
+.container_home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 0;
+}
+
+
+.container_cards{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin: 2rem 0;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 100%;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 300px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 300px;
+}
+
+.card > img {
+  margin-bottom: 8px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card > p {
+  color: #3D3932;
+  margin: 0px;
+  padding: 0px;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-5px);
+}
+
+
+.card h3 {
+  margin:0;
+  padding: 0;
+  color: #EA8C0C;
+  font-weight: 600;
+}
+
+a{
+  text-decoration: none;
+   color: inherit;
+}
+
+.container_cards > a {
+  display: flex;  /* ou inline-flex */
+  flex: 1 1 350px;
+  max-width: 350px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card p, .card h3 {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }

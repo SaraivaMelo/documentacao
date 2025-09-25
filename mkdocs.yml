@@ -25,29 +25,29 @@ theme:
     repo: fontawesome/brands/github
 
 nav:
-  - Visão Geral: 'index.md'
-  - Módulos: 
-    - Departamento Pessoal: 
-      - Dashboard: 'dashboard.md'
-      - Colaborador: 
-        - Gerenciar: 'dp/colaborador/gerenciar.md'
-        - Ativar colaboradores em lote: 'dp/colaborador/ativar_lote.md'
-        - Documentos em lote: 'dp/colaborador/documento_lote.md'
-    - Frequencia: 'frequencia.md'
-    - Férias: 'ferias.md'
-    - Comunicação: 'comunicacao.md'
-    - Saúde Ocupacional: 'so.md'
-    - Benefícios: 'beneficios.md'
-    - Gestao de EPI: 'epi.md'
-    - Avaliação de Desempenho: 'avaliacao.md'
-    - Perfil Comportamental: 'perfil.md'
-    - Pesquisa de Clima: 'pesquisa.md'
-    - Feedbacks: 'feedbacks.md'
-    - Recrutamento e Seleção: 'res.md'
-    - Portal do Gestor: 'gestor.md'
-    - Portal do Colaborador: 'colaborador.md'
-    - Assinatura Eletronica: 'sign.md'
-    - Treinamento e Desenvolvimento: 'ted.md'
+  - Início: 'index.md'
+  # - Módulos: 
+  #   - Departamento Pessoal: 
+  #     - Dashboard: 'dashboard.md'
+  #     - Colaborador: 
+  #       - Gerenciar: 'dp/colaborador/gerenciar.md'
+  #       - Ativar colaboradores em lote: 'dp/colaborador/ativar_lote.md'
+  #       - Documentos em lote: 'dp/colaborador/documento_lote.md'
+  #   - Frequencia: 'frequencia.md'
+  #   - Férias: 'ferias.md'
+  #   - Comunicação: 'comunicacao.md'
+  #   - Saúde Ocupacional: 'so.md'
+  #   - Benefícios: 'beneficios.md'
+  #   - Gestao de EPI: 'epi.md'
+  #   - Avaliação de Desempenho: 'avaliacao.md'
+  #   - Perfil Comportamental: 'perfil.md'
+  #   - Pesquisa de Clima: 'pesquisa.md'
+  #   - Feedbacks: 'feedbacks.md'
+  #   - Recrutamento e Seleção: 'res.md'
+  #   - Portal do Gestor: 'gestor.md'
+  #   - Portal do Colaborador: 'colaborador.md'
+  #   - Assinatura Eletronica: 'sign.md'
+  #   - Treinamento e Desenvolvimento: 'ted.md'
 
 plugins:
   - search
@@ -56,6 +56,9 @@ plugins:
 
 extra_css:
   - assets/css/default.css
+
+extra_javascript:
+  - assets/js/index.js
 
 markdown_extensions:
   - toc:
