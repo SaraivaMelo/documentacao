@@ -56,9 +56,12 @@ plugins:
 
 extra_css:
   - assets/css/default.css
+  - assets/css/dp.css
 
 extra_javascript:
+  - https://kit.fontawesome.com/9e3cc0425d.js
   - assets/js/index.js
+
 
 markdown_extensions:
   - toc:
